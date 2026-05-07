@@ -17,77 +17,11 @@
         <!-- Set the title bar of the page -->
         <title>Fly Simulator</title>
 
-        <center>
-        <h1>Fly Simulator</h1>
-        <br>
-        </center>
+        <link rel="stylesheet" href="style.css">
+        <!-- Custom PostStyle code is injected here -->
         
 
-        <!-- Set the background colour of the document -->
-        <style>
-            body {
-                background: rgb(74, 74, 168);
-                color: #cccccc;
-                margin: 0px;
-                padding: 0px;
-                border: 0px;
-                h1, h2, h3, h4, h5, h6 {
-                    color: #FFFFFF;
-                }
-
-                h1 {
-                    font-size: 48px;
-                }
-            }
-
-            canvas {
-                image-rendering: optimizeSpeed;
-                -webkit-interpolation-mode: nearest-neighbor;
-                -ms-touch-action: none;
-                touch-action: none;
-                margin-top: 20px;
-                margin: 0px;
-                padding: 0px;
-                border: 0px;
-            }
-            :-webkit-full-screen #canvas {
-                width: 100%;
-                height: 100%;
-            }
-            :-webkit-full-screen {
-                width: 100%;
-                height: 100%;
-            }
-            
-            /* Custom Runner Styles */
-            div.gm4html5_div_class {
-                margin: 0px;
-                padding: 0px;
-                border: 0px;
-            }
-            div.gm4html5_login {
-                padding: 20px;
-                position: absolute;
-                border: solid 2px #000000;
-                background-color: #404040;
-                color:#00ff00;
-                border-radius: 15px;
-                box-shadow: #101010 20px 20px 40px;
-            }
-            div.gm4html5_cancel_button {
-                float: right;
-            }
-            div.gm4html5_login_button {
-                float: left;
-            }
-            div.gm4html5_login_header {
-                text-align: center;
-            }
-            /* END - Custom Runner Styles */
-            
-        </style>
-
-        <!-- Custom PostStyle code is injected here -->
+        <!-- Builtin injector for injecting flurry analytics code -->
         
 
         <!-- Builtin injector for injecting flurry analytics code -->
@@ -104,6 +38,11 @@
         <!-- Custom BodyStart code is injected here -->
         
 
+        <header>
+            <h1>Fly Simulator</h1>
+            <h2>Made by: Ryan</h2>
+        </header>
+
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             
             <!-- Builtin injector for splash screen -->
@@ -113,10 +52,24 @@
             
 
             <!-- Create the canvas element the game draws to -->
-            <canvas id="canvas" width="1366" height="768" style="position: absolute; top: 50%; left: 50%; bottom: -50%; right: -50%; transform: translate(-50%, -50%);">
+            <canvas id="canvas" width="1366" height="768" style="position: absolute; top: 220px; left: 50%; transform: translateX(-50%);">
                 
                 <p>Your browser doesn't support HTML5 canvas.</p>
             </canvas>
+            <div class="content">
+                <a href="https://github.com/ryanjohnson1-lab/Fly-Simulator" target="_blank">GitHub Repository</a>
+                <h3>About:</h3>
+                <p>Fly Simulator is an incredibly accurate game based on the life of flies. I made this game to show people the incredibly difficult life of flies and to learn more about creating games.</p>
+                <h3>How to Play:</h3>
+                <p>Use WASD or arrow keys to move around. Avoid obstacles to get points. Collect power-ups to get special abilities.</p>
+                <h3>Learning Goal:</h3>
+                <img src="UpdateScore.png" alt="Score updater code" width="500px">
+                <p>This method takes an integer and adds it to the points variable. It is used at the end of every single attack to increase the score. Even though it's not a lot of code I only have to put 1 line in each object instead of multiple.</p>
+                <img src="GetInput.png" alt="Input code" width="500px">
+                <p>This method stores the keys that are being pressed by the user. It runs every frame and making it a method saves a lot of room in the players code.</p>
+                <h3>LLM Usage:</h3>
+                <p>No code for the game was generated using a LLM. However, I used AI to come with a color palette for the background and to help create the website. This made things a lot easier because I struggle with colors and am not the best at creating websites. It helped to speed up the website development a lot and improved the quality of the colors in the game.</p>
+            </div>
             
             <!-- Custom PostCanvas code is injected here -->
             
