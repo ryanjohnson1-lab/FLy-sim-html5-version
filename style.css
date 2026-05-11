@@ -28,7 +28,7 @@ h2 {
 h3 {
     font-size: 1.25rem;
     margin-top: 2rem;
-    color: #FFD700;
+    color: #fffbd8;
 }
 
 /* Header */
@@ -78,13 +78,13 @@ canvas {
 }
 
 .content a {
-    color: #FFD700;
+    color: #fffbd8;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .content a:hover {
-    color: #FFA500;
+    color: #598ceb;
 }
 
 .content p {
